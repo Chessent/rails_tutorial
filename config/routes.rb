@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   #get '/home' => 'pages#home'
 
   get 'contact' => 'pages#contact'
@@ -6,6 +8,8 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   
   get 'help' => 'pages#help'
+
+  get 'signup' => 'users#new'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
